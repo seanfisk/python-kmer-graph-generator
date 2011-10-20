@@ -60,13 +60,13 @@ for line in fr:
             overlap_count = overlap_count + 1
             fw.write(str(read_idx) + "," + str(i) + ","  + s + "," + rs +"," +  str(k_mers[s[:-1]][0]) + "," + str(k_mers[s[:-1]][1]) + "\n")
         else:
-             fw.write(str(read_idx) + "," + str(i) + ","  + s + "," + rs +","+ str(read_idx) + "," + str(i) + "\n")
+            fw.write(str(read_idx) + "," + str(i) + ","  + s + "," + rs +","+ str(read_idx) + "," + str(i) + "\n")
 
         if not (s[1:] in k_mers):
             k_mers[s[1:]] = [read_idx, i]
             k_mers[rs[1:]] = [read_idx, i]
             k_mer_count = k_mer_count + 2
-           
+            
             
     read_idx = read_idx + 1
     read_count = read_count - 1
