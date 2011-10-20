@@ -2,10 +2,10 @@ import sys
 import time
 
 # generate the reverse complement of a sequence
-def reverse_complement(s):
+def reverse_complement(sequence):
     rc = ""
     # iterate on string from beginning to end_time (I think?)
-    for i in s[::-1]:
+    for i in sequence[::-1]:
         if i == 'A':
             rc = rc + 'T'
         elif i == 'C':
